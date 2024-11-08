@@ -1,0 +1,103 @@
+*{
+    margin: 0;;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section{
+    height: 100vh;
+    background-color: rgb(6, 6, 48);
+    padding-top: 20%;
+}
+
+.container{
+    /* border:solid 1px aqua;
+    border-left: none;
+    border-right: none; */
+    box-shadow:
+    0 0 10px rgba(134, 69, 255, 0.4), /* Resplandor cercano */
+    0 0 25px 1px rgba(159, 15, 255, 0.5); /* Color secundario del resplandor */
+}
+
+.pacman{
+    width: 80%;
+    margin: auto;
+    padding-right: 5%;
+    display: flex;
+    align-items: center;
+}
+
+img:nth-child(1){
+    width: 300px;
+    z-index: 3;
+}
+
+
+img:nth-child(2){
+    position: absolute;
+    right: 20%;
+    width: 100px;
+    animation:mover 2.5s infinite linear;
+    animation-delay: 0;
+}
+
+ img:nth-child(3){
+    position: absolute;
+    right: 10%;
+    width: 100px;
+    animation:mover1 2.5s infinite linear;
+    animation-delay: 0.66s;
+} 
+
+img:nth-child(4){
+    position: absolute;
+    right: 0%;
+    width: 100px;
+    animation:mover2 2.5s infinite linear;
+    animation-delay: 1.33s;
+} 
+
+ @keyframes mover {
+    0%{
+        right:20%;
+    }
+    100%{
+        right:85%;
+    }
+}
+
+
+
+@keyframes mover1 {
+    0%{
+        right:10%;
+    }
+    100%{
+        right:80%;
+    }
+}
+
+
+@keyframes mover2 {
+    0%{
+        right:0%;
+    }
+    /* 50%{
+        right:35%;
+    }
+    
+    80%{
+        right: 55%;
+    }
+
+    95%{
+        right: 65%;
+    }
+
+    97%{
+        right: 75%; 
+    }*/
+    100%{
+        right:80%;
+    }
+}
